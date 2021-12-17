@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flashlight.css" id="flashlightStyles">
+    <title>NoWayHome</title>
+    <style>
+        a {
+            position: absolute;
+            top: 55vh;
+            width: 20vw;
+            left: 40vw;
+            border-radius: 8px;
+            border: none;
+            background: white;
+            text-align: center;
+            box-shadow: 2px 2px 2px white;
+            padding: 8px;
+            font-family: Calibri;
+            z-index: 998;
+        }
+        a[href="/title.html"] {
+            position: absolute;
+            top: 65vh !important;
+            width: 20vw;
+            left: 40vw;
+            border-radius: 8px;
+            border: none;
+            background: white;
+            text-align: center;
+            box-shadow: 2px 2px 2px white;
+            padding: 8px;
+            font-family: Calibri;
+            z-index: 998;
+        }
+
+    </style>
+</head>
+
+<body style="margin: 0px; padding: 0px; ">
+    <script src="phaser.min.js"></script>
+    <script src="level2.js"></script>
+    <div id="flashlightHolder">
+        <p id="energy" style="position: absolute; color:white; text-align: center; z-index:1000;font-family: calibri;font-size: 15px;width: 100%"></p>
+        <div id="flashlightHolderInside">
+            <div class="flashlight"></div>
+            <div class="astrolight"></div>
+        </div>
+    </div>
+    <!--*I know this down't work, its a placeholder for future correction-->
+    <audio autoplay loop>
+      <source src="dark.mp3" type="audio/mp3">
+    </audio>
+</body>
+
+</html>
